@@ -23,9 +23,14 @@ $botman->hears('Hello|Hi', function (BotMan $bot) {
 $botman->hears('Good Morning', function (BotMan $bot) {
     $bot->reply('Hey..Good morning');
 });
-
+$botman->hears('Good evening', function (BotMan $bot) {
+    $bot->reply('Hey..Good evening');
+});
+$botman->hears('Good afternoon', function (BotMan $bot) {
+    $bot->reply('Hey..Good afternoon');
+});
 $botman->fallback(function($bot) {
-    $bot->reply('Sorry, I did not understand these commands. Here is a list of commands I understand: Hello, Hi, Good Morning');
+    $bot->reply('Sorry, I did not understand these commands. Here is a list of commands I understand: Hello, Hi, Good Morning, Good Afternoon, Good evening');
 });
 
 // Start listening
