@@ -1,0 +1,275 @@
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+    <mdb-carousel-item>
+      <div class="view w-100">
+        <img class="d-block w-100" src="/assets/images/image6.jpg" alt="First slide">
+        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+      </div>
+      <!-- <div class="carousel-caption"> -->
+        <!-- <h3 class="h3-responsive">Light mask</h3> -->
+        <!-- <p>First text</p> -->
+      <!--</div>-->
+    </mdb-carousel-item>
+  </mdb-carousel>
+  <div class="container my-5 black">
+
+    <!-- Section -->
+    <section>
+      
+      <style>
+        .gallery {
+          -webkit-column-count: 3;
+          -moz-column-count: 3;
+          column-count: 3;
+          -webkit-column-width: 33%;
+          -moz-column-width: 33%;
+          column-width: 33%; 
+        }
+          .gallery .pics {
+          -webkit-transition: all 350ms ease;
+          transition: all 350ms ease; 
+        }
+          .gallery .animation {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1); 
+        }
+  
+        @media (max-width: 450px) {
+          .gallery {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+            -webkit-column-width: 100%;
+            -moz-column-width: 100%;
+            column-width: 100%;
+          }
+        }
+  
+        @media (max-width: 400px) {
+          .btn.filter {
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
+          }
+        }
+        button.close {
+          position: absolute;
+          right: 0;
+          z-index: 2;
+          padding-right: 1rem;
+          padding-top: .6rem;
+        }
+      </style>
+      
+      <!-- Modal -->
+    
+  
+      <h3 class="font-weight-bold text-center white-text pb-2 pt-5">Our Services</h3>
+      
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-12 white-text d-flex justify-content-center mb-5">
+  
+          <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter white-text" data-rel="all">All</button>
+          <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+          <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter white-text" data-rel="1">Event</button>
+          <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+          <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter white-text" data-rel="2">Birthday</button>
+          <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+          <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter white-text" data-rel="3">Wedding</button>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+      <!-- Grid row -->
+      <div class="gallery mb-5" id="gallery">
+  
+        <!-- Grid column -->
+        <div class="mb-3 pics all 2 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/bday3.jpg" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/Event1.jpg" alt="Card image cap">
+          </a>
+        </div>
+        
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="mb-3 pics all 3 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/wedding1.jpg" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/Event2.jpg" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="mb-3 pics all 2 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/Bday1.jfif" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="mb-3 pics all 2 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/bday2.jfif" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+         <!-- Grid column -->
+         <div class="mb-3 pics all 3 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/wedding2.jpg" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/Event3.jpeg" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="mb-3 pics all 3 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="assets/images/wedding3.jpg" alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+  
+    </section>
+    <!-- Section -->
+  
+  </div>
+  
+  <div class="black">
+
+
+  <!--Section: Content-->
+  <section class="text-center pt-5 pb-5">
+
+    <!-- Section heading -->
+    <h3 class="font-weight-bold white-text pb-2 mb-4">Our pricing plans</h3>
+    <!-- Section description -->
+    <p class="text-muted white-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+      eum porro a pariatur veniam.</p>
+
+    <!-- Grid row -->
+    <div class="row1">
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-12 mb-4 " data-aos="fade-down" data-aos-delay="600">
+
+        <!-- Pricing card -->
+        <div class="card pricing-card white-text" style="border-style: none!important;">
+
+          <!-- Price -->
+          <div class="green">
+            <h4 class="option pt-3 pb-3">BASIC</h4>
+          </div>
+
+          <!-- Features -->
+          <div class="card-body striped green-striped card-background px-5 black-text ">
+
+            <h2 class="my-4 pb-3 h1">20$</h2>
+            <p>50 HD photos</p>
+            <p>30 min video</p>
+            <p>6 days delivery</p>
+
+          </div>
+          <!-- Features -->
+
+        </div>
+
+        <!-- Pricing card -->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-down" data-aos-delay="800">
+
+        <!-- Pricing card -->
+        <div class="card pricing-card white-text" style="border-style: none!important;">
+
+          <!-- Price -->
+          <div class="green">
+            <h4 class="option pt-3 pb-3">PRO</h4>
+          </div>
+
+          <!-- Features -->
+          <div class="card-body striped orange-striped card-background px-5 black-text">
+
+            <h2 class="my-4 pb-3 h1">80$</h2>
+            <p>250 HD photos</p>
+            <p>1.5 hour video</p>
+            <p>3 days delivery</p>
+
+          </div>
+          <!-- Features -->
+
+        </div>
+        <!-- Pricing card -->
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-down" data-aos-delay="1000">
+
+        <!-- Pricing card -->
+        <div class="card pricing-card white-text" style="border-style: none!important;">
+
+          <!-- Price -->
+          <div class="green">
+            <h4 class="option pt-3 pb-3">PREMIUM</h4>
+          </div>
+
+          <!-- Features -->
+          <div class="card-body striped purple-striped card-background px-5 black-text">
+
+            <h2 class="my-4 pb-3 h1">100$</h2>
+            <p>500 HD photos</p>
+            <p>3 hour video</p>
+            <p>2 days delivery</p>
+
+          </div>
+          <!-- Features -->
+
+        </div>
+        <!-- Pricing card -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+<app-footer></app-footer>
